@@ -1,207 +1,542 @@
-  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+ /* 🔥 1. HERO SLIDER SECTION */
+ .hero-section {
+     position: relative;
+     width: 100%;
+     height: 60vh;
+     min-height: 400px;
+     overflow: hidden;
+ }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
+ .slider-container {
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
 
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 5%;
-        }
+ .slide {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
 
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 70px;
-        }
+ .slide.active {
+     opacity: 1;
+     transform: scale(1);
+ }
 
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2c3e50;
-            text-decoration: none;
-            letter-spacing: -1px;
-        }
+ .slide.prev {
+     transform: translateX(-100%);
+ }
 
-        .logo span {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+ .slide.next {
+     transform: translateX(100%);
+ }
 
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 3rem;
-            align-items: center;
-        }
+ /* Slider Content Overlay */
+ .slide-content {
+     position: absolute;
+     bottom: 20%;
+     left: 8%;
+     color: white;
+     max-width: 500px;
+     z-index: 3;
+ }
 
-        .nav-link {
-            color: #34495e;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            position: relative;
-            transition: color 0.3s ease;
-        }
+ .slide-title {
+     font-size: clamp(2.5rem, 5vw, 4rem);
+     font-weight: 700;
+     margin-bottom: 1rem;
+     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+     line-height: 1.2;
+ }
 
-        .nav-link:hover {
-            color: #2c3e50;
-        }
+ .slide-subtitle {
+     font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+     margin-bottom: 2rem;
+     opacity: 0.95;
+     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+ }
 
-        /* Underline Animation */
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            transition: width 0.3s ease;
-        }
+ .cta-button {
+     display: inline-block;
+     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+     color: white;
+     padding: 1rem 2.5rem;
+     border-radius: 50px;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 1.1rem;
+     box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+     transition: all 0.3s ease;
+ }
 
-        .nav-link:hover::after {
-            width: 100%;
-        }
+ .cta-button:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 20px 40px rgba(240, 147, 251, 0.6);
+ }
 
-        /* Dropdown Styles */
-        .dropdown {
-            position: relative;
-        }
+ /* Navigation Arrows */
+ .nav-arrow {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background: rgba(52, 51, 63, 0.2);
+     backdrop-filter: blur(10px);
+     border: none;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     color: white;
+     font-size: 1.5rem;
+     cursor: pointer;
+     z-index: 5;
+     transition: all 0.3s ease;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
-        .dropdown-content {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            min-width: 200px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border-radius: 10px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateX(-50%) translateY(-10px);
-            transition: all 0.3s ease;
-            margin-top: 10px;
-            list-style: none;
-            padding: 10px 0;
-        }
+ .nav-arrow:hover {
+     background: rgba(255, 255, 255, 0.4);
+     transform: translateY(-50%) scale(1.1);
+ }
 
-        .dropdown:hover .dropdown-content {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(-50%) translateY(0);
-        }
+ .prev-arrow {
+     left: 3%;
+ }
 
-        .dropdown-item {
-            padding: 12px 20px;
-            color: #34495e;
-            text-decoration: none;
-            display: block;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border-radius: 8px;
-            margin: 2px 10px;
-        }
+ .next-arrow {
+     right: 3%;
+ }
 
-        .dropdown-item:hover {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            transform: translateX(5px);
-        }
+ /* Pagination Dots */
+ .pagination {
+     position: absolute;
+     bottom: 5%;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     gap: 12px;
+     z-index: 5;
+ }
 
-        /* Right Icons */
-        .nav-icons {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
+ .dot {
+     width: 14px;
+     height: 14px;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.5);
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
 
-        .icon {
-            width: 24px;
-            height: 24px;
-            fill: #34495e;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
+ .dot.active {
+     background: white;
+     transform: scale(1.3);
+     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+ }
 
-        .icon:hover {
-            fill: #2c3e50;
-            transform: scale(1.1);
-        }
+ /* 🔥 2. CIRCULAR CATEGORIES SECTION */
 
-        .search-icon {
-            width: 22px;
-            height: 22px;
-        }
 
-        .cart-icon {
-            width: 26px;
-            height: 26px;
-        }
+ .categories-section {
+     padding: 2rem 1rem;
+     text-align: center;
+ }
 
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: #e74c3c;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+ /* TITLE */
+ .section-title {
+     font-size: 2rem;
+     margin-bottom: 10px;
+ }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 2rem;
-            }
+ .section-subtitle {
+     color: #666;
+     margin-bottom: 20px;
+ }
 
-            .nav-menu {
-                gap: 1.5rem;
-            }
+ /* WRAPPER */
+ .categories-wrapper {
+     position: relative;
+     max-width: 900px;
+     margin: auto;
+     overflow: hidden;
+ }
 
-            .logo {
-                font-size: 1.5rem;
-            }
+ /* SLIDER */
+ .categories-slider {
+     display: flex;
+     gap: 20px;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+ }
 
-            .dropdown-content {
-                min-width: 180px;
-                left: 0;
-                transform: translateX(0);
-            }
-        }
+ /* hide scrollbar */
+ .categories-slider::-webkit-scrollbar {
+     display: none;
+ }
 
-        @media (max-width: 480px) {
-            .navbar {
-                padding: 0.8rem 3%;
-            }
+ /* CARD */
+ .category-card {
+     flex: 0 0 calc(100%/4 - 15px);
+     /* 🔥 4 items */
+     text-align: center;
+ }
 
-            .nav-menu {
-                gap: 1rem;
-            }
+ /* IMAGE */
+ .category-image {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin: auto;
+     border: 3px solid #667eea;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
 
-            .nav-icons {
-                gap: 1rem;
-            }
-        }
+ .category-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ /* TITLE */
+ .category-title {
+     margin-top: 8px;
+     font-weight: 600;
+ }
+
+ /* BUTTON */
+ .slider-btn {
+     position: absolute;
+     top: 40%;
+     transform: translateY(-50%);
+     background: #667eea;
+     color: #fff;
+     border: none;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     cursor: pointer;
+     font-size: 20px;
+ }
+
+ /* positions */
+ .prev {
+     left: -10px;
+ }
+
+ .next {
+     right: -10px;
+ }
+
+ /* MOBILE */
+ @media(max-width:768px) {
+     .category-image {
+         width: 70px;
+         height: 70px;
+     }
+
+     .category-card {
+         flex: 0 0 calc(100%/4 - 10px);
+     }
+ }
+
+ /* 🔥 MOBILE */
+ @media (max-width: 768px) {
+     .categories-slider {
+         justify-content: flex-start;
+         /* mobile me left se start */
+         padding-left: 1rem;
+     }
+
+     .category-card {
+         width: 110px;
+     }
+
+     .category-image {
+         width: 90px;
+         height: 90px;
+     }
+ }
+
+ /* ============================= */
+ /* TRENDING GIFTS - CLEAN CSS */
+ /* Fixed Card Size + Wishlist */
+ /* Mobile Responsive */
+ /* ============================= */
+ /* General Section Styling */
+
+.products-section {
+    padding: 40px 5%;
+    background: #f9fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 0 auto 35px;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* CARD */
+
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGE */
+
+.product-image {
+    height: 220px;
+    position: relative;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    flex-shrink: 0;
+}
+
+.product-bg-2 {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.product-bg-3 {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.product-bg-4 {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.product-bg-5 {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+/* FLIPKART STYLE HEART */
+
+.wishlist-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.wishlist-icon i {
+    font-size: 18px;
+    color: #757575;
+    line-height: 1;
+}
+
+/* CONTENT */
+
+.product-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* TITLE */
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.5;
+    margin-bottom: 8px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* DESCRIPTION */
+
+.product-description {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 14px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* PRICE */
+
+.product-price {
+    margin-bottom: 16px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: #ef4444;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* FIXED BOTTOM BUTTON */
+
+.product-button {
+    margin-top: auto;
+
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ff6b6b;
+    color: #fff;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.product-button:hover {
+    background: #e05555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+ /* ===============================
+   Full Width Banner Section
+================================= */
+ .giftoriaa-banner-section {
+     width: 100%;
+     padding: 25px;
+     margin: 0;
+ }
+
+ .giftoriaa-banner-wrapper {
+     width: 100%;
+     height: 55vh;
+     overflow: hidden;
+ }
+
+ .giftoriaa-banner-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+     display: block;
+ }
+
+ /* Tablet */
+ @media (max-width: 768px) {
+     .giftoriaa-banner-wrapper {
+         height: 40vh;
+     }
+
+     .giftoriaa-banner-image {
+         object-fit: contain;
+         /* mobile me full image show hogi */
+         background: #fff;
+     }
+ }
+
+ /* Mobile */
+ @media (max-width: 480px) {
+     .giftoriaa-banner-section {
+         padding: 15px;
+     }
+
+     .giftoriaa-banner-wrapper {
+         height: auto;
+     }
+
+     .giftoriaa-banner-image {
+         width: 100%;
+         height: auto;
+         object-fit: contain;
+         /* left-right cut nahi hoga */
+     }
+ }
