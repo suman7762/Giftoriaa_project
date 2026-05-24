@@ -17,222 +17,771 @@
     <!-- 🔥 1. MAIN HERO SLIDER -->
     <section class="hero-section">
         <div class="slider-container" id="slider">
-            <!-- Slide 1 -->
-            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1400&h=800&fit=crop');">
+
+            <!-- Slide 1: Example - images/banner1.jpg -->
+            <div class="slide active" style="background-image: url('assets/images/27cfacf3-08f6-433d-a098-f7a03bc1b0e9.jpg');">
                 <div class="slide-content">
-                    <h1 class="slide-title">Perfect Gifts</h1>
-                    <p class="slide-subtitle">For every special moment in life</p>
-                    <a href="#" class="cta-button">Shop Now</a>
+                    <!-- <h1 class="slide-title">Perfect Gifts</h1>
+                <p class="slide-subtitle">For every special moment in life</p>
+                <a href="#" class="cta-button">Shop Now</a> -->
                 </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1608043152268-8fc2d8d6f576?w=1400&h=800&fit=crop');">
+
+            <!-- Slide 2: Example - images/banner2.jpg -->
+            <div class="slide" style="background-image: url('assets/images/e8b7707f-9fec-4f2b-a8fb-5fa08688e621.jpg');">
                 <div class="slide-content">
-                    <h1 class="slide-title">Personalized Gifts</h1>
-                    <p class="slide-subtitle">Make it special with your touch</p>
-                    <a href="#" class="cta-button">Explore</a>
+                    <!-- <h1 class="slide-title">Personalized Gifts</h1>
+                <p class="slide-subtitle">Make it special with your touch</p>
+                <a href="#" class="cta-button">Explore</a> -->
                 </div>
             </div>
+
             <!-- Slide 3 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&h=800&fit=crop');">
+            <div class="slide" style="background-image: url('assets/images/Gemini_Generated_Image_7635o47635o47635.png');">
                 <div class="slide-content">
-                    <h1 class="slide-title">Birthday Special</h1>
-                    <p class="slide-subtitle">Surprise your loved ones</p>
-                    <a href="#" class="cta-button">View Gifts</a>
+                    <!-- <h1 class="slide-title">Birthday Special</h1>
+                <p class="slide-subtitle">Surprise your loved ones</p>
+                <a href="#" class="cta-button">View Gifts</a> -->
                 </div>
             </div>
+
             <!-- Slide 4 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587206?w=1400&h=800&fit=crop');">
+            <div class="slide" style="background-image: url('assets/images/0f215897-7044-46fd-88b6-c9cccefabdbb.jpg');">
                 <div class="slide-content">
-                    <h1 class="slide-title">Wedding Gifts</h1>
-                    <p class="slide-subtitle">Celebrate love & togetherness</p>
-                    <a href="#" class="cta-button">Discover</a>
+                    <!-- <h1 class="slide-title">Wedding Gifts</h1>
+                <p class="slide-subtitle">Celebrate love & togetherness</p>
+                <a href="#" class="cta-button">Discover</a> -->
                 </div>
             </div>
+
             <!-- Slide 5 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1400&h=800&fit=crop');">
+            <div class="slide" style="background-image: url('assets/images/47b692a6-a6c8-4a42-8a1e-a67d96105fa2.jpg');">
                 <div class="slide-content">
-                    <h1 class="slide-title">Corporate Gifts</h1>
-                    <p class="slide-subtitle">Perfect for your team</p>
-                    <a href="#" class="cta-button">Shop Corporate</a>
+                    <!-- <h1 class="slide-title">Corporate Gifts</h1>
+                <p class="slide-subtitle">Perfect for your team</p>
+                <a href="#" class="cta-button">Shop Corporate</a> -->
                 </div>
             </div>
+
         </div>
 
-        <!-- Navigation Arrows -->
+        <!-- Arrows aur Pagination same rahenge -->
         <button class="nav-arrow prev-arrow" id="prevBtn">‹</button>
         <button class="nav-arrow next-arrow" id="nextBtn">›</button>
-
-        <!-- Pagination Dots -->
         <div class="pagination" id="pagination"></div>
     </section>
 
     <!-- 🔥 2. CIRCULAR CATEGORIES -->
-    <section class="categories-section">
-        <h2 class="section-title">Gifts for Special People</h2>
-        <p class="section-subtitle">Find the perfect gift for your loved ones</p>
-        <div class="categories-wrapper">
-            <button class="slider-btn prev" id="Special_prevBtn">&#10094;</button>
-            <div class="categories-slider" id="Special_slider">
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?1"></div>
-                    <h3 class="category-title">Brother</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?2"></div>
-                    <h3 class="category-title">Mom</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?3"></div>
-                    <h3 class="category-title">Dad</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?4"></div>
-                    <h3 class="category-title">Sister</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?5"></div>
-                    <h3 class="category-title">Couples</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?6"></div>
-                    <h3 class="category-title">Friends</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image"><img src="https://picsum.photos/200?7"></div>
-                    <h3 class="category-title">Kids</h3>
-                </div>
+    <section class="custom-category-section">
+        <div class="container">
+            <h2 class="main-title">Buy Custom Personalized & Corporate Gifts</h2>
+            <p class="main-subtitle">Alight Custom Gift - A Bit of You in Every Gift</p>
+
+            <div class="category-grid">
+                <a href="new-arrival-gifts.php">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?1" alt="Birthday"></div>
+                        <p>Birthday</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?2" alt="Anniversary"></div>
+                        <p>Anniversary</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?3" alt="Trophies"></div>
+                        <p>Trophies</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?4" alt="Mini You"></div>
+                        <p>Mini You Series</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?5" alt="Corporate"></div>
+                        <p>Corporate Gifts</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?6" alt="Personalized"></div>
+                        <p>Personalized Gifts</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?7" alt="Hampers"></div>
+                        <p>Gift Hampers</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?8" alt="Handmade"></div>
+                        <p>Handmade Gifts</p>
+                    </div>
+                </a>
             </div>
-            <button class="slider-btn next" id="Special_nextBtn">&#10095;</button>
         </div>
     </section>
 
-    <!-- 🔥 3. TRENDING PRODUCTS GRID -->
-
-
-    <!-- Bootstrap Icons CDN -->
-
-    <section class="products-section">
-        <h2 class="section-title">Trending Gifts</h2>
-        <p class="section-subtitle">Handpicked collection of most loved gifts</p>
-
-        <div class="products-grid">
-
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <button class="wishlist-icon">
-                        <i class="bi bi-heart"></i>
-                    </button>
-                </div>
-
-                <div class="product-content">
-                    <h3 class="product-title">
-                        Customized Photo Frame with Engraving and LED Lights
-                    </h3>
-                    <div class="product-price">
-                        <span class="old-price">₹1499</span>
-                        <span class="new-price">₹700</span>
-                    </div>
-                    <button class="product-button">Buy Now</button>
-                </div>
+    <!-- Main Wrapper Section - Isme aap background color change kar sakte hain -->
+    <section class="bs-custom-section">
+        <div class="bs-container">
+            <div class="bs-title-wrapper">
+                <span class="bs-main-title">Bestsellers</span>
             </div>
 
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <div class="product-image product-bg-2">
-                    <button class="wishlist-icon">
-                        <i class="bi bi-heart"></i>
-                    </button>
+            <div class="bs-category-grid">
+                <!-- Item 1 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/ad6d51fb-ac18-4165-b572-97e2b6697a54.jpg" alt="Corporate Favorites">
+                    </div>
+                    <p class="bs-label">Corporate Favorites</p>
                 </div>
 
-                <div class="product-content">
-                    <h3 class="product-title">
-                        Personalized Ceramic Mug for Coffee Lovers
-                    </h3>
-                    <div class="product-price">
-                        <span class="old-price">₹599</span>
-                        <span class="new-price">₹299</span>
+                <!-- Item 2 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/cc86ee29-60ed-4b61-9fa8-1e50c566462c.jpg" alt="Trophies">
                     </div>
-                    <button class="product-button">Buy Now</button>
+                    <p class="bs-label">Trophies</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/de6b249b-c23c-4d54-9453-deec9d51dc3c.jpg" alt="Table Top">
+                    </div>
+                    <p class="bs-label">Table Top</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/8fefd2a8-ed1d-4704-9d07-4171786def1f.jpg" alt="Clock">
+                    </div>
+                    <p class="bs-label">Clock</p>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/188537a2-a9d3-40a6-846b-18df3760e7af.jpg" alt="Gift Hamper">
+                    </div>
+                    <p class="bs-label">Gift Hamper</p>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="LED Lamp">
+                    </div>
+                    <p class="bs-label">LED Lamp</p>
                 </div>
             </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card">
-                <div class="product-image product-bg-3">
-                    <button class="wishlist-icon">
-                        <i class="bi bi-heart"></i>
-                    </button>
-                </div>
-
-                <div class="product-content">
-                    <h3 class="product-title">
-                        Enchanting LED Rose Lamp with 3D Illusion
-                    </h3>
-                    <div class="product-price">
-                        <span class="old-price">₹1299</span>
-                        <span class="new-price">₹699</span>
-                    </div>
-                    <button class="product-button">Buy Now</button>
-                </div>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="product-card">
-                <div class="product-image product-bg-4">
-                    <button class="wishlist-icon">
-                        <i class="bi bi-heart"></i>
-                    </button>
-                </div>
-
-                <div class="product-content">
-                    <h3 class="product-title">
-                        Custom Acrylic Keychain with Photo Engraving
-                    </h3>
-                    <div class="product-price">
-                        <span class="old-price">₹399</span>
-                        <span class="new-price">₹199</span>
-                    </div>
-
-                    <button class="product-button">Buy Now</button>
-                </div>
-            </div>
-
-            <!-- Product Card 5 -->
-            <div class="product-card">
-                <div class="product-image product-bg-5">
-                    <button class="wishlist-icon">
-                        <i class="bi bi-heart"></i>
-                    </button>
-                </div>
-
-                <div class="product-content">
-                    <h3 class="product-title">
-                        Luxury Chocolate Hamper with Premium Belgian Chocolates
-                    </h3>
-                    <div class="product-price">
-                        <span class="old-price">₹1499</span>
-                        <span class="new-price">₹899</span>
-                    </div>
-
-                    <button class="product-button">Buy Now</button>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Full Width Banner Section -->
-    <section class="giftoriaa-banner-section">
-        <div class="giftoriaa-banner-wrapper">
-            <img src="assets/images/banner-image.png" alt="Giftoriaa Banner" class="giftoriaa-banner-image">
+    <section class="st-reels-section">
+        <div class="st-container">
+            <div class="st-row" id="stScrollRow">
+                <div class="st-item" onclick="openStoryPlayer(0)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/12268326_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Trophies</span> -->
+                </div>
+
+                <div class="st-item" onclick="openStoryPlayer(1)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/7311982-uhd_4096_2160_25fps.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Bottle Gifts</span> -->
+                </div>
+
+                <div class="st-item" onclick="openStoryPlayer(2)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/7817160-hd_1080_1920_25fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(3)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/7763522-hd_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(4)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/8342150-hd_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(5)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/8861607-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(6)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/12268326_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(7)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/6929596-hd_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(8)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/8342431-hd_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(9)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/istockphoto-2195951313-640_adpp_is.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(10)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/5446639-hd_1080_1920_30fps.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+                <div class="st-item" onclick="openStoryPlayer(11)">
+                    <div class="st-circle-border">
+                        <div class="st-img-inner">
+                            <video muted loop autoplay playsinline>
+                                <source src="assets/videos/226609.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <span>Money Box</span> -->
+                </div>
+            </div>
         </div>
     </section>
+
+    <div id="stPlayerModal" class="st-modal">
+        <span class="st-close-btn" onclick="closeStoryPlayer()">&times;</span>
+
+        <button class="st-nav-btn st-prev-btn" onclick="changeReel(-1)"><i class="bi bi-chevron-left"></i></button>
+
+        <div class="st-reel-content">
+            <video id="stMainVideo" loop playsinline></video>
+
+            <div class="st-product-overlay">
+                <div class="st-prod-details">
+                    <h4 id="stProdName">Product Title</h4>
+                    <p id="stProdPrice">₹000 <span class="st-old-price">₹000</span></p>
+                    <button class="st-add-cart-btn">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="st-nav-btn st-next-btn" onclick="changeReel(1)"><i class="bi bi-chevron-right"></i></button>
+    </div>
+    <!-- TRENDING GIFTS - MODERN MINIMAL UI -->
+    <section class="tr-products-section">
+        <div class="tr-container">
+            <div class="tr-top-header">
+                <div class="tr-title-box">
+                    <h2 class="tr-section-title">Trending Gifts</h2>
+                    <p class="tr-section-subtitle">Handpicked collection of most loved gifts</p>
+                </div>
+                <a href="all-products.php" class="tr-view-all">View All →</a>
+            </div>
+
+            <div class="tr-carousel-container">
+                <button class="tr-slider-btn prev" id="tr-btn-left"><i class="bi bi-chevron-left"></i></button>
+
+                <div class="tr-slider-track" id="tr-trending-slider">
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/image5.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus mollitia ullam quibusdam illum assumenda qui.</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/couple-coffee-mug (1).jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/d1-pro__001-1672730208440.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/il_1080xN.4689130530_9mk1.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/DSC09787-1.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/laser-cut-wooden-rose-easy-Mothers-day-gift-idea-9-1536x2048.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/krstboommetlicht.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-product-card">
+                        <div class="tr-product-image">
+                            <img src="assets/images/a90054ccfc707a1f7727dd7a9112789d.jpg" alt="Product">
+                            <button class="tr-wishlist-btn"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <div class="tr-product-info">
+                            <h3 class="tr-product-name">Personalized Photo Lamp</h3>
+                            <div class="tr-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(126)</span>
+                            </div>
+                            <div class="tr-price-row">
+                                <span class="tr-old-price">₹1,499</span>
+                                <span class="tr-new-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="tr-slider-btn next" id="tr-btn-right"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="wcu-section">
+        <div class="wcu-container">
+            <h2 class="wcu-main-title">Why Choose Us?</h2>
+
+            <div class="wcu-grid">
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <div class="wcu-text">
+                        <h4>Premium Quality</h4>
+                        <p>Carefully selected products</p>
+                    </div>
+                </div>
+
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <div class="wcu-text">
+                        <h4>Secure Payment</h4>
+                        <p>100% safe & secure</p>
+                    </div>
+                </div>
+
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <div class="wcu-text">
+                        <h4>Custom Designs</h4>
+                        <p>Personalized just for you</p>
+                    </div>
+                </div>
+
+                <div class="wcu-item">
+                    <div class="wcu-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <div class="wcu-text">
+                        <h4>Fast Shipping</h4>
+                        <p>On-time gift delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gt-about-section">
+        <div class="gt-container">
+            <div class="gt-about-flex">
+
+                <div class="gt-about-image">
+                    <div class="gt-comparison-slider" id="gtSlider">
+                        <div class="gt-img gt-after-img">
+                            <img src="assets/images/Gemini_Generated_Image_ck5ildck5ildck5i.png" alt="After Engraving">
+                        </div>
+                        <div class="gt-img gt-before-img" id="beforeImg">
+                            <img src="assets/images/Gemini_Generated_Image_zed9h2zed9h2zed9 (1).png" alt="Before Engraving">
+                        </div>
+                        <div class="gt-slider-handle" id="sliderHandle">
+                            <div class="gt-handle-arrows"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gt-about-content">
+                    <span class="gt-subtitle">Hamari Kahani</span>
+                    <h2 class="gt-title">Sirf Tohfe Nahi, Yaadein Banate Hain</h2>
+
+                    <p class="gt-description">
+                        <strong>Giftoriaa</strong> par hamara manna hai ki har tohfa ek kahani kehta hai. Hum sirf products nahi bechte, balki aapke anmol palon ko hamesha ke liye yaadgaar banane ka kaam karte hain.
+                    </p>
+
+                    <p class="gt-highlight">
+                        "Hamari <strong>CO2 Laser Technology</strong> se hum har gift ko aapke jazbaaton ke hisab se personalize karte hain, taaki wo sirf ek vastu nahi balki ek ehsas ban jaye."
+                    </p>
+
+                    <div class="gt-stats">
+                        <div class="gt-stat-item">
+                            <strong>100%</strong>
+                            <span>Personalized</span>
+                        </div>
+                        <div class="gt-stat-item">
+                            <strong>Laser</strong>
+                            <span>Precision</span>
+                        </div>
+                        <div class="gt-stat-item">
+                            <strong>Premium</strong>
+                            <span>Finish</span>
+                        </div>
+                    </div>
+
+                    <!-- <a href="about.php" class="gt-about-btn">Hamare Bare Mein Aur Jane</a> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <?php
     include 'includes/footer.php';
     ?>
 </body>
+<script>
+    // Reels ka Data (Path check kar lena!)
+    const reelsData = [{
+            video: 'assets/videos/12268326_1080_1920_30fps.mp4',
+            name: 'Wooden Handshake Momentos',
+            price: '₹1,326',
+            old: '₹2,195'
+        },
+        {
+            video: 'assets/videos/7311982-uhd_4096_2160_25fps.mp4',
+            name: 'Customized Glass Bottle',
+            price: '₹699',
+            old: '₹899'
+        },
+        {
+            video: 'assets/videos/7817160-hd_1080_1920_25fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/7763522-hd_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/8342150-hd_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/8861607-uhd_4096_2160_25fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/12268326_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/6929596-hd_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/8342431-hd_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/istockphoto-2195951313-640_adpp_is.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/5446639-hd_1080_1920_30fps.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        },
+        {
+            video: 'assets/videos/226609.mp4',
+            name: 'Wooden Money Box',
+            price: '₹1,500',
+            old: '₹2,500'
+        }
+
+
+    ];
+
+    let currentIndex = 0;
+
+    // Modal open karne ka function
+    window.openStoryPlayer = function(index) {
+        currentIndex = index;
+        const modal = document.getElementById('stPlayerModal');
+        const video = document.getElementById('stMainVideo');
+
+        // UI update
+        updateModalUI();
+
+        modal.style.display = 'flex';
+        video.play().catch(e => console.log("Auto-play blocked, waiting for user."));
+    }
+
+    // Modal close karne ka function
+    window.closeStoryPlayer = function() {
+        const modal = document.getElementById('stPlayerModal');
+        const video = document.getElementById('stMainVideo');
+        modal.style.display = 'none';
+        video.pause();
+        video.src = ""; // Stop buffering
+    }
+
+    // Next/Prev button logic
+    window.changeReel = function(step) {
+        currentIndex += step;
+        if (currentIndex >= reelsData.length) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = reelsData.length - 1;
+        updateModalUI();
+    }
+
+    function updateModalUI() {
+        const data = reelsData[currentIndex];
+        const video = document.getElementById('stMainVideo');
+        const name = document.getElementById('stProdName');
+        const price = document.getElementById('stProdPrice');
+
+        if (data) {
+            video.src = data.video;
+            name.innerText = data.name;
+            price.innerHTML = `${data.price} <span class="st-old-price">${data.old}</span>`;
+            video.load(); // Load new video
+            video.play().catch(e => console.log("Video change failed."));
+        }
+    }
+
+    // Outside click se modal close karne ke liye
+    window.onclick = function(event) {
+        const modal = document.getElementById('stPlayerModal');
+        if (event.target == modal) {
+            closeStoryPlayer();
+        }
+    }
+
+    // ==================
+    // horizontal scroll for desktop
+    const slider = document.querySelector('.st-row');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        // Mouse ki initial position aur current scroll position save karna
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        slider.style.scrollBehavior = 'auto'; // Drag ke waqt smooth scroll band karein for better feel
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.scrollBehavior = 'smooth'; // Wapas smooth scroll on
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Agar click nahi kiya toh kuch mat karo
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll ki speed (2 se multiply kiya hai)
+        slider.scrollLeft = scrollLeft - walk;
+    });
+</script>
 <script>
     // 🔥 Hero Slider JavaScript - Complete Working Code
     document.addEventListener('DOMContentLoaded', function() {
@@ -399,12 +948,72 @@
 
     });
 </script>
+
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('tr-trending-slider');
+        const btnLeft = document.getElementById('tr-btn-left');
+        const btnRight = document.getElementById('tr-btn-right');
+
+        btnRight.addEventListener('click', () => {
+            // Ek baar mein 3 cards scroll honge
+            track.scrollBy({
+                left: track.offsetWidth / 2,
+                behavior: 'smooth'
+            });
+        });
+
+        btnLeft.addEventListener('click', () => {
+            track.scrollBy({
+                left: -track.offsetWidth / 2,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script>
+    const c = imageslider = document.getElementById('gtSlider');
+    const beforeImg = document.getElementById('beforeImg');
+    const handle = document.getElementById('sliderHandle');
+
+    // Mouse Move Event
+    imageslider.addEventListener('mousemove', (e) => {
+        // Slider ki position calculate karna
+        let rect = imageslider.getBoundingClientRect();
+        let x = e.clientX - rect.left;
+
+        // Limits set karna (taaki handle bahar na jaye)
+        if (x < 0) x = 0;
+        if (x > rect.width) x = rect.width;
+
+        // Percentage nikalna
+        let position = (x / rect.width) * 100;
+
+        // UI Update karna
+        beforeImg.style.width = position + "%";
+        handle.style.left = position + "%";
+    });
+
+    // Mobile Touch Support
+    imageslider.addEventListener('touchmove', (e) => {
+        let rect = imageslider.getBoundingClientRect();
+        let x = e.touches[0].clientX - rect.left;
+
+        if (x < 0) x = 0;
+        if (x > rect.width) x = rect.width;
+
+        let position = (x / rect.width) * 100;
+        beforeImg.style.width = position + "%";
+        handle.style.left = position + "%";
+    });
+</script>
+
+<!-- <script>
     document.querySelectorAll(".wishlist-icon").forEach(function(icon) {
         icon.addEventListener("click", function() {
             this.classList.toggle("active");
         });
     });
-</script>
+</script> -->
 
 </html>

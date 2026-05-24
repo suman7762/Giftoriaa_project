@@ -1,0 +1,32 @@
+/* =============== BREADCRUMB=============== */
+
+        .gift-breadcrumb{
+            padding-top:30px;
+        }
+        .gift-breadcrumb-box{
+            background:#faf7f2;
+            padding:6px 22px;
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
+        .gift-breadcrumb-box a{
+            text-decoration:none;
+            color:#ff6b35;
+            font-size:15px;
+            font-weight:600;
+        }
+        .gift-breadcrumb-box i{
+            color:#999;
+            font-size:11px;
+        }
+        .gift-breadcrumb-box p{
+            color:#333;
+            font-size:15px;
+            margin:0;
+        }
+.custom-container-breadcrumb{
+   width:100%;
+    margin:auto;
+    margin-bottom: 0px;
+}

@@ -142,401 +142,831 @@
      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
  }
 
- /* 🔥 2. CIRCULAR CATEGORIES SECTION */
-
-
- .categories-section {
-     padding: 2rem 1rem;
-     text-align: center;
+ :root {
+     --brand-brown: #8b572a;
+     /* Matching your header color */
+     --light-bg: #fdf8f5;
  }
 
- /* TITLE */
- .section-title {
-     font-size: 2rem;
-     margin-bottom: 10px;
- }
-
- .section-subtitle {
-     color: #666;
-     margin-bottom: 20px;
- }
-
- /* WRAPPER */
- .categories-wrapper {
-     position: relative;
-     max-width: 900px;
-     margin: auto;
-     overflow: hidden;
- }
-
- /* SLIDER */
- .categories-slider {
-     display: flex;
-     gap: 20px;
-     overflow-x: auto;
-     scroll-behavior: smooth;
- }
-
- /* hide scrollbar */
- .categories-slider::-webkit-scrollbar {
-     display: none;
- }
-
- /* CARD */
- .category-card {
-     flex: 0 0 calc(100%/4 - 15px);
-     /* 🔥 4 items */
-     text-align: center;
- }
-
- /* IMAGE */
- .category-image {
-     width: 100px;
-     height: 100px;
-     border-radius: 50%;
-     overflow: hidden;
-     margin: auto;
-     border: 3px solid #667eea;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
- }
-
- .category-image img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
-
- /* TITLE */
- .category-title {
-     margin-top: 8px;
-     font-weight: 600;
- }
-
- /* BUTTON */
- .slider-btn {
-     position: absolute;
-     top: 40%;
-     transform: translateY(-50%);
-     background: #667eea;
-     color: #fff;
-     border: none;
-     width: 40px;
-     height: 40px;
-     border-radius: 50%;
-     cursor: pointer;
-     font-size: 20px;
- }
-
- /* positions */
- .prev {
-     left: -10px;
- }
-
- .next {
-     right: -10px;
- }
-
- /* MOBILE */
- @media(max-width:768px) {
-     .category-image {
-         width: 70px;
-         height: 70px;
-     }
-
-     .category-card {
-         flex: 0 0 calc(100%/4 - 10px);
-     }
- }
-
- /* 🔥 MOBILE */
- @media (max-width: 768px) {
-     .categories-slider {
-         justify-content: flex-start;
-         /* mobile me left se start */
-         padding-left: 1rem;
-     }
-
-     .category-card {
-         width: 110px;
-     }
-
-     .category-image {
-         width: 90px;
-         height: 90px;
-     }
- }
-
- /* ============================= */
- /* TRENDING GIFTS - CLEAN CSS */
- /* Fixed Card Size + Wishlist */
- /* Mobile Responsive */
- /* ============================= */
- /* General Section Styling */
-
-.products-section {
-    padding: 40px 5%;
-    background: #f9fafb;
+ /* ======================================= */
+/* 2. Custom Category Section (Fixed UI)   */
+/* ======================================= */
+.custom-category-section {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem;
+.main-title {
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 8px;
-    color: #222;
+    color: #1a1a1a;
+    margin-bottom: 5px;
 }
 
-.section-subtitle {
-    text-align: center;
-    margin: 0 auto 35px;
-    color: #6b7280;
-    font-size: 1rem;
+.main-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 40px;
 }
 
-/* GRID */
-
-.products-grid {
+/* DESKTOP: Full grid */
+.category-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    align-items: stretch;
+    grid-template-columns: repeat(8, 1fr); /* 8 items in a row */
+    gap: 30px; /* Thoda gap balance kiya */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* CARD */
+/* Link Wrapper Style Fix */
+.category-grid a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
 
-.product-card {
-    background: #fff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+.category-card {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    transition: 0.3s ease;
+    align-items: center;
+    width: 100%;
 }
 
-.product-card:hover {
-    transform: translateY(-4px);
-}
-
-/* IMAGE */
-
-.product-image {
-    height: 220px;
-    position: relative;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    flex-shrink: 0;
-}
-
-.product-bg-2 {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-}
-
-.product-bg-3 {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-}
-
-.product-bg-4 {
-    background: linear-gradient(135deg, #10b981, #059669);
-}
-
-.product-bg-5 {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-}
-
-/* FLIPKART STYLE HEART */
-
-.wishlist-icon {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-
-    width: 38px;
-    height: 38px;
-
-    border: 1px solid #e5e7eb;
-    border-radius: 50%;
-    background: #ffffff;
-
+.image-holder {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Pure Square Ratio */
+    background: linear-gradient(to bottom, #dcc8b3, #ffffff);
+    border-radius: 8px; /* Desktop par bhi thoda smooth feel */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    cursor: pointer;
-    padding: 0;
-    outline: none;
-
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.wishlist-icon i {
-    font-size: 18px;
-    color: #757575;
-    line-height: 1;
-}
-
-/* CONTENT */
-
-.product-content {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-/* TITLE */
-
-.product-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #222;
-    line-height: 1.5;
-    margin-bottom: 8px;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #dcc8b3;
+    transition: transform 0.2s ease;
 }
 
-/* DESCRIPTION */
-
-.product-description {
-    font-size: 0.9rem;
-    color: #6b7280;
-    line-height: 1.6;
-    margin-bottom: 14px;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.image-holder:hover {
+    transform: scale(1.05);
 }
 
-/* PRICE */
-
-.product-price {
-    margin-bottom: 16px;
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: #9ca3af;
-    font-size: 0.9rem;
-    margin-right: 8px;
-}
-
-.new-price {
-    color: #ef4444;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-/* FIXED BOTTOM BUTTON */
-
-.product-button {
-    margin-top: auto;
-
+/* 🔥 FIX: Image size chhota-bada hona rokne ke liye strict rule */
+.image-holder img {
     width: 100%;
-    padding: 12px;
-
-    border: none;
-    border-radius: 10px;
-
-    background: #ff6b6b;
-    color: #fff;
-
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-
-    transition: 0.3s;
+    height: 100%;
+    object-fit: cover; /* Agar product images transparent bg wali hain toh yahan 'contain' use karein */
+    display: block;
 }
 
-.product-button:hover {
-    background: #e05555;
+.category-card p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    /* Agarsf naam bada ho toh screen se bahar na jaye */
+    white-space: normal; 
+    text-align: center;
 }
 
-/* RESPONSIVE */
+/* ======================================= */
+/* MOBILE & TABLET: Horizontal Scroll Fix  */
+/* ======================================= */
+@media (max-width: 992px) {
+    .category-grid {
+        display: flex; /* Grid ko flex mein badla scroll ke liye */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 0 20px 15px 20px;
+        scrollbar-width: none; /* Firefox scrollbar hide */
+    }
 
-@media (max-width: 1200px) {
-    .products-grid {
-        grid-template-columns: repeat(4, 1fr);
+    .category-grid::-webkit-scrollbar {
+        display: none; /* Chrome/Safari scrollbar hide */
+    }
+
+    /* 🔥 FIX: Ab <a> tag wrapper sahi se width control karega */
+    .category-grid a {
+        flex: 0 0 100px; /* Mobile par har card ki exact standard width */
+        scroll-snap-align: start;
+    }
+
+    .image-holder {
+        border-radius: 15px; /* Mobile rounded look */
+    }
+
+    .category-card p {
+        font-size: 12px;
+        white-space: normal; /* Do lines mein text wrap hone dega taaki cut na ho */
     }
 }
 
-@media (max-width: 992px) {
-    .products-grid {
-        grid-template-columns: repeat(3, 1fr);
+/* =========================== */
+/* --- 3 Bestsellers Section Specific Styling --- */
+.bs-custom-section {
+    background-color: #faf7f2;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.bs-container {
+    max-width: 1200px;
+    margin: -35px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.bs-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bs-main-title {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    font-weight: 700;
+    color: #333;
+    padding: 0 20px;
+}
+
+.bs-title-wrapper::before,
+.bs-title-wrapper::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #b1783f;
+    max-width: 150px;
+}
+
+/* 🔥 UPDATED: 1 Row mein 5 cards ka logic */
+.bs-category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 Columns */
+    gap: 20px; /* Gap badhaya gaya hai taaki cards narrow lagen */
+}
+
+.bs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 10px; /* Space inside card */
+}
+
+.bs-card:hover {
+    transform: translateY(-8px);
+}
+
+.bs-img-box {
+    width: 100%; /* Pehle 80% tha, ab container ke hisab se full */
+    max-width: 190px; /* Width ko control karne ke liye */
+    /* 🔥 UPDATED: Height badhane ke liye aspect-ratio change kiya (Width : Height) */
+    aspect-ratio: 4 / 5; 
+    border: 1px solid #b1783f;
+    border-radius: 40px; /* Thoda kam rounded taaki lambai dikhe */
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.bs-img-box img {
+    width: 100%;
+    height: 100%;
+    /* Image ko bina stretch kiye pura dikhane ke liye cover behtar hai */
+    object-fit: cover; 
+}
+
+.bs-label {
+    margin-top: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.95rem; /* Font thoda sleek kiya */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .bs-category-grid {
+        grid-template-columns: repeat(4, 1fr); /* Tablet par 4 */
     }
 }
 
 @media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .product-image {
-        height: 200px;
+    .bs-category-grid {
+        grid-template-columns: repeat(3, 1fr); /* Chote tablet par 3 */
     }
 }
 
 @media (max-width: 480px) {
-    .products-grid {
-        grid-template-columns: 1fr;
+    .bs-category-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mobile par 2 */
+        gap: 15px;
+    }
+
+    .bs-img-box {
+        border-radius: 25px;
+    }
+    
+    .bs-label {
+        font-size: 0.85rem;
     }
 }
 
- /* ===============================
-   Full Width Banner Section
-================================= */
- .giftoriaa-banner-section {
-     width: 100%;
-     padding: 25px;
-     margin: 0;
- }
-
- .giftoriaa-banner-wrapper {
-     width: 100%;
-     height: 55vh;
+ /* --- 4  Trending Gifts New UI --- */
+ .tr-products-section {
+     padding: 38px 0;
+     background: #fff;
+     font-family: 'Poppins', sans-serif;
      overflow: hidden;
  }
 
- .giftoriaa-banner-image {
+ .tr-container {
+     max-width: 1400px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ .tr-top-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     margin-bottom: 25px;
+ }
+
+ .tr-section-title {
+     font-size: 1.6rem;
+     font-weight: 700;
+     color: #222;
+ }
+
+ .tr-view-all {
+     color: #764ba2;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 0.9rem;
+ }
+
+ .tr-carousel-container {
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+
+ .tr-slider-track {
+     display: flex;
+     gap: 15px;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     scrollbar-width: none;
+     width: 100%;
+     padding: 10px 0;
+ }
+
+ .tr-slider-track::-webkit-scrollbar {
+     display: none;
+ }
+
+ .tr-product-card {
+     background: #fff;
+     width: 20px;
+     flex-direction: column;
+     min-width: calc(16.66% - 13px);
+     flex: 0 0 auto;
+     transition: 0.3s;
+ }
+
+ .tr-product-image {
+     width: 100%;
+     aspect-ratio: 1 / 1;
+     border-radius: 10px;
+     overflow: hidden;
+     position: relative;
+     background: #f5f5f5;
+ }
+
+ .tr-product-image img {
      width: 100%;
      height: 100%;
      object-fit: cover;
-     object-position: center;
-     display: block;
  }
 
- /* Tablet */
- @media (max-width: 768px) {
-     .giftoriaa-banner-wrapper {
-         height: 40vh;
-     }
+ .tr-product-name {
+     font-size: 0.85rem;
+     font-weight: 600;
+     margin: 10px 0 5px;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     min-height: 2.4rem;
+ }
 
-     .giftoriaa-banner-image {
-         object-fit: contain;
-         /* mobile me full image show hogi */
-         background: #fff;
+ .tr-price-row {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     margin-top: auto;
+ }
+
+ .tr-old-price {
+     font-size: 0.75rem;
+     color: #999;
+     text-decoration: line-through;
+ }
+
+ .tr-new-price {
+     font-size: 1rem;
+     font-weight: 700;
+     color: #ef4444;
+ }
+
+ .tr-wishlist-btn {
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     background: #fff;
+     border: none;
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     font-size: 12px;
+ }
+
+ /* Arrows */
+ .tr-slider-btn {
+     position: absolute;
+     top: 40%;
+     transform: translateY(-50%);
+     width: 35px;
+     height: 35px;
+     background: #fff;
+     border: 1px solid #ddd;
+     border-radius: 50%;
+     z-index: 50;
+     cursor: pointer;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .tr-slider-btn.prev {
+     left: -15px;
+ }
+
+ .tr-slider-btn.next {
+     right: -15px;
+ }
+
+ /* Responsive */
+ @media (max-width: 1200px) {
+     .tr-product-card {
+         min-width: calc(25% - 12px);
      }
  }
 
- /* Mobile */
- @media (max-width: 480px) {
-     .giftoriaa-banner-section {
-         padding: 15px;
-     }
-
-     .giftoriaa-banner-wrapper {
-         height: auto;
-     }
-
-     .giftoriaa-banner-image {
-         width: 100%;
-         height: auto;
-         object-fit: contain;
-         /* left-right cut nahi hoga */
+ /* 4 Cards */
+ @media (max-width: 800px) {
+     .tr-product-card {
+         min-width: calc(33.33% - 10px);
      }
  }
+
+ /* 3 Cards */
+ @media (max-width: 500px) {
+     .tr-product-card {
+         min-width: calc(50% - 8px);
+     }
+
+     /* 2 Cards */
+     .tr-slider-btn {
+         display: none;
+     }
+ }
+
+ /* ===================== */
+ /* 5 video reel */
+ /* --- Story Circles --- */
+ /* --- Story Section Styles --- */
+.st-reels-section {
+    padding: 28px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.st-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.st-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Scroll allow karne ke liye */
+    scrollbar-width: none; /* Firefox ke liye scrollbar hide */
+    cursor: grab; /* Desktop par mouse hand icon dikhane ke liye */
+    user-select: none; /* Drag karte waqt text select na ho */
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.st-row:active {
+    cursor: grabbing; /* Click karke pakadne par icon change hoga */
+}
+
+.st-row::-webkit-scrollbar {
+    display: none; /* Chrome/Safari ke liye scrollbar hide */
+}
+.st-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0; /* Important: prevents shrinking */
+}
+
+.st-circle-border {
+    width: clamp(80px, 15vw, 140px); /* Responsive Size */
+    height: clamp(80px, 15vw, 140px);
+    border-radius: 50%;
+    padding: 1px;
+    background-color: #99612d;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.st-item:hover .st-circle-border {
+    transform: scale(1.05);
+}
+
+.st-img-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.st-img-inner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Full Screen Modal (Fixed Responsive) --- */
+.st-modal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.98); /* Thoda aur dark background */
+    z-index: 99999; /* Isse video aapke header ke bhi UPER aayega */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+.st-reel-content {
+    position: relative; 
+    width: 100%; 
+    max-width: 360px; /* Standard Reel Width */
+    height: 85vh; /* Responsive Height */
+    background: #000; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    margin: auto; /* Screen ke beech mein rakhta hai */
+}
+
+.st-reel-content video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Overlay UI */
+.st-product-overlay {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background: linear-gradient(transparent, rgba(0,0,0,0.9)); 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.st-prod-details {
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 15px; 
+    text-align: center;
+}
+
+.st-prod-details h4 { font-size: 1rem; margin-bottom: 5px; color: #333; }
+.st-prod-details p { font-weight: 700; color: #ef4444; margin-bottom: 10px; }
+.st-old-price { text-decoration: line-through; color: #999; font-size: 0.8rem; margin-left: 5px; }
+
+.st-add-cart-btn {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Navigation & Close Buttons */
+/* --- Close (X) Button - Ab ye hamesha dikhega --- */
+.st-close-btn {
+    position: absolute; 
+    top: 30px; 
+    right: 30px; 
+    color: #ffffff; 
+    font-size: 50px; /* Thoda bada kiya taaki dikhe */
+    cursor: pointer; 
+    z-index: 100001; /* Video ke bhi uper */
+    text-shadow: 0 0 10px rgba(0,0,0,0.5); /* Background white hone par bhi dikhega */
+    line-height: 1;
+}
+
+.st-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11000;
+}
+
+.st-prev-btn { left: 20px; }
+.st-next-btn { right: 20px; }
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 600px) {
+    .st-modal {
+        padding: 0; /* Mobile pe full screen */
+    }
+    .st-reel-content {
+        height: 100vh; /* Full mobile height */
+        max-width: 100%; 
+        border-radius: 0;
+    }
+    .st-nav-btn {
+        display: none; /* Mobile pe arrows hide karein, user click/swipe se karta hai */
+    }
+    .st-circle-border {
+        width: 100px;
+        height: 100px;
+    }
+     .st-close-btn {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    }
+}
+
+/* --- Why Choose Us Section --- */
+.wcu-section {
+    background-color: #7a5430; /* Image wala brown color */
+    padding: 60px 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wcu-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.wcu-main-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-family: serif; /* Image jaisa elegant look dene ke liye */
+}
+
+.wcu-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.wcu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    min-width: 250px; /* Mobile par stack hone ke liye */
+    justify-content: center;
+}
+
+.wcu-icon {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1;
+}
+
+.wcu-text {
+    text-align: left;
+}
+
+.wcu-text h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    letter-spacing: 0.5px;
+}
+
+.wcu-text p {
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* 🔥 Responsive Fix */
+@media (max-width: 992px) {
+    .wcu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .wcu-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .wcu-item {
+        justify-content: flex-start;
+        padding-left: 20%;
+    }
+}
+
+/* --- About Section Styles --- */
+/* --- Giftoriaa About Section Full CSS (Fixed Centered Slide) --- */
+.gt-about-section {
+    padding: 45px 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.gt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gt-about-flex {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+}
+
+/* --- Image Side (50% Width) --- */
+.gt-about-image {
+    flex: 1;
+    width: 50%;
+    position: relative;
+    /* border: 1px solid #7a5430;
+    border-radius: 5px; */
+}
+
+/* --- Comparison Slider UI (Natural Height & Centered Slide) --- */
+.gt-comparison-slider {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: col-resize;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.gt-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 🟢 After Image: Base image jo height decide karegi */
+.gt-after-img {
+    position: relative;
+    z-index: 1;
+}
+
+/* 🟢 Before Image: Top layer jo slide hogi */
+.gt-before-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Initial handle position */
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+}
+
+/* 🔥 THE FIX: Isse Before image center se align rahegi aur kategi nahi */
+.gt-img img {
+    width: 100%;
+    height: 100%; /* Parent div ki height cover karega */
+    display: block;
+    object-fit: cover; 
+    object-position: center; /* Image center se dikhegi */
+}
+
+/* Base image ke liye auto height ensure karein */
+.gt-after-img img {
+    height: auto;
+}
+
+/* Slider Handle (Center Line) */
+.gt-slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    z-index: 3;
+    transform: translateX(-50%);
+    pointer-events: none; /* Mouse drag mein rukawat na bane */
+}
+
+.gt-handle-arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #7a5430;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gt-handle-arrows::before {
+    content: "◀ ▶";
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* --- Content Side (50% Width) --- */
+.gt-about-content {
+    flex: 1;
+    width: 50%;
+}
+
+/* Rest of the typography remains same as your code */
+.gt-subtitle { color: #99612d; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; font-size: 0.9rem; display: block; margin-bottom: 15px; }
+.gt-title { font-size: 32px; color: #2d2d2d; line-height: 1.2; margin-bottom: 10px; font-family: serif; }
+.gt-description { font-size: 1.1rem; color: #666; line-height: 1.7; margin-bottom: 20px; }
+.gt-highlight { background: #fdfaf7; border-left: 4px solid #99612d; padding: 15px; font-style: italic; font-size: 1.1rem; color: #4a3728; margin-bottom: 30px; }
+.gt-stats { display: flex; gap: 30px; margin-bottom: 40px; border-top: 1px solid #eee; padding-top: 15px; }
+.gt-stat-item strong { display: block; font-size: 1.4rem; color: #99612d; }
+.gt-stat-item span { font-size: 0.9rem; color: #888; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .gt-about-flex { flex-direction: column; text-align: center; gap: 40px; }
+    .gt-about-image, .gt-about-content { width: 100%; flex: none; }
+    .gt-about-image { max-width: 500px; margin: 0 auto; }
+    .gt-title { font-size: 2rem; }
+}

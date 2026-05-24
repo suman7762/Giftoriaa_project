@@ -1,0 +1,342 @@
+.gift-breadcrumb {
+    padding-top: 15px !important;
+}
+/* =========================================
+   PRODUCT INNER PAGE - PREMIUM STYLING
+   ========================================= */
+
+/* 1. Main Section Background */
+.product-inner-section {
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .product-inner-section .row {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+/* 🔥 FIXED: Row-reverse hata kar straight flex kiya (Thumbs Left, Main Image Right) */
+.gallery-sticky-container {
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row; /* Normal flow: left to right */
+    gap: 20px; /* Main image aur thumbnails ke beech ka premium gap */
+    width: 100%;
+}
+
+/* Main Slider Styling - Premium Look */
+.product-main-slider {
+    flex: 1;
+    width: calc(100% - 100px);
+    border: 1px solid #eaeaea;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 12px; /* Smooth rounded corners */
+}
+
+.product-main-slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-main-slider .swiper-slide img,
+.product-main-slider .swiper-slide video {
+    width: 100%;
+    height: 520px; /* Elegant taller dimension */
+    object-fit: cover;
+    display: block;
+}
+
+.product-inner-video {
+    background: #000;
+}
+
+/* 🔥 UPDATED: Left Side Thumbnails Column styling with better gaps */
+.product-thumbs-slider {
+    width: 80px; 
+    flex-shrink: 0;
+    position: relative;
+    padding: 30px 0; /* Space for top-bottom arrows */
+    margin: 0 !important;
+    height: 520px; /* Matches main slider height perfectly */
+}
+
+/* Individual Thumbnail Card Look */
+.product-thumbs-slider .swiper-slide {
+    height: 80px !important; 
+    width: 100% !important;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px; /* High fidelity smooth borders */
+    overflow: hidden;
+    opacity: 0.6;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #fff;
+}
+
+.product-thumbs-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔥 IMPROVED LOOK: Hover & Active state improvements with dynamic gaps */
+.product-thumbs-slider .swiper-slide:hover {
+    opacity: 0.9;
+    border-color: #cbd5e1;
+}
+
+.product-thumbs-slider .swiper-slide-thumb-active {
+    border-color: #b1783f; /* Premium brand gold tone accent */
+    border-width: 2px;
+    opacity: 1;
+    box-shadow: 0 4px 12px rgba(177, 120, 63, 0.15); /* Soft premium glow */
+    transform: scale(1.02); /* Clean micro-interaction */
+}
+
+/* Thumbnail Navigation Arrows (Sleek minimalist look) */
+.thumb-next,
+.thumb-prev {
+    color: #4a5568 !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+
+.thumb-next::after,
+.thumb-prev::after {
+    font-size: 12px !important;
+    font-weight: 900;
+}
+
+@media (min-width: 992px) {
+    .thumb-prev {
+        top: 5px !important;
+        bottom: auto !important;
+        transform: translateX(-50%) rotate(90deg) !important;
+    }
+    .thumb-next {
+        bottom: 5px !important;
+        top: auto !important;
+        transform: translateX(-50%) rotate(90deg) !important;
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DOWNGRADE (Clean Grid fallback)
+   ========================================= */
+@media (max-width: 991px) {
+    .gallery-sticky-container {
+        flex-direction: column; /* Stack vertically on small viewports */
+        gap: 12px;
+    }
+
+    .product-main-slider {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .product-main-slider .swiper-slide img,
+    .product-main-slider .swiper-slide video {
+        height: 380px;
+    }
+
+    .product-thumbs-slider {
+        width: 100%;
+        height: auto;
+        padding: 0 35px;
+    }
+
+    .product-thumbs-slider .swiper-slide {
+        height: 65px !important;
+        width: 65px !important;
+        border-radius: 6px;
+    }
+
+    .thumb-prev {
+        left: 5px !important;
+        top: 50% !important;
+        transform: translateY(-50%) rotate(0deg) !important;
+    }
+    .thumb-next {
+        right: 5px !important;
+        top: 50% !important;
+        transform: translateY(-50%) rotate(0deg) !important;
+    }
+}
+
+ /* Right Side: Details Side Styling */
+ .product-details-content {
+     padding-left: 15px;
+     position: relative;
+     /* Sticky child ke liye zaroori hai */
+     display: flex;
+     flex-direction: column;
+ }
+
+ @media (min-width: 992px) {
+     .product-details-content {
+         max-height: 75vh;
+         overflow-y: auto;
+         padding-right: 5px;
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+     }
+
+     .product-details-content::-webkit-scrollbar {
+         display: none;
+     }
+ }
+
+ /* Mobile adjustments */
+ @media (max-width: 991px) {
+     .product-details-content {
+         max-height: none;
+         overflow-y: visible;
+         padding-left: 0;
+     }
+
+     .product-main-slider .swiper-slide img {
+         height: 350px;
+     }
+ }
+
+ /* Typography */
+ .inner-product-title {
+     font-size: 1.8rem;
+     margin-bottom: 10px;
+     font-weight: 700;
+     color: #222;
+ }
+
+ .new-price-inner {
+     font-size: 2rem;
+     font-weight: 800;
+ }
+
+ /* 🔥 NEW: Buttons Container Fix (Single Line + Half-Half Width + Sticky Bottom) */
+ .inner-action-btns {
+     display: flex;
+     gap: 10px;
+     /* Dono buttons ke beech ka space */
+     width: 100%;
+     margin-top: auto;
+     /* Agar content chhota ho toh bottom par push karega */
+     padding-top: 20px;
+     padding-bottom: 10px;
+     background-color: #ffffff;
+     /* Scroll content piche chhupne ke liye solid background */
+
+     /* Sticky Magic: Jab tak content scroll hoga, buttons niche fixed rahenge */
+     position: -webkit-sticky;
+     position: sticky;
+     bottom: 0;
+     z-index: 10;
+ }
+
+ /* 🔥 NEW: Dono buttons ko 50% width par lane ke liye wrapper code */
+ .inner-buy-btn,
+ .inner-whatsapp-btn {
+     flex: 1;
+     /* Dono buttons barabar (50%-50%) space lenge */
+     width: 50%;
+     padding: 15px 10px;
+     /* Dynamic padding text adjustment ke liye */
+     color: #fff;
+     border: none;
+     font-weight: 700;
+     border-radius: 8px;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+     /* Font size thoda chhota kiya taaki desktop/mobile dono pe text wrap na ho */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     white-space: nowrap;
+     /* Text ko line break hone se rokega */
+ }
+
+ .inner-buy-btn {
+     background: linear-gradient(45deg, #b8962e, #d4af37);
+ }
+
+ .inner-whatsapp-btn {
+     background: #25D366;
+ }
+/* ============================================================ */
+/* --- Alight Custom Gift - Sleek Height No-Cut Banner Styling --- */
+/* ============================================================ */
+.acg-perfect-banner-section {
+    width: 100%;
+    padding: 25px 0; /* Top aur Bottom space */
+    background-color: #ffffff; /* Clean white background */
+}
+
+.acg-banner-fluid-container {
+    width: 100%;
+    /* 🔥 Left aur Right side se premium padding jaisa aapne manga tha */
+    padding-left: 25px; 
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.acg-banner-aspect-box {
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    
+    /* 🔥 STRICT FIX: Koyi border radius nahi, corners bilkul sharp hain */
+    border-radius: 0px !important; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.acg-banner-render-img {
+    width: 100%;
+    /* Aapne height 528px rakhi hai, isko aap apne hisab se aur kam bhi kar sakte hain (e.g., 400px ya 450px) */
+    height: 528px; 
+    
+    /* 🔥 Cover frame ko poora bharega aur dono sides khali nahi chhodega */
+    object-fit: cover; 
+    
+    /* 🔥 MAGIC LINE: Isse image ka top area cut ho jayega aur bottom/center products par focus shift hoga */
+    object-position: center bottom; 
+    
+    border-radius: 0px !important; /* Sharp corners */
+    display: block;
+}
+
+/* --- Responsive Viewports (Mobile & Tablets) --- */
+
+/* Tablets ke liye */
+@media (max-width: 1024px) {
+    .acg-banner-render-img {
+        height: 350px; /* Tablet par height thodi kam ki taaki responsive lage */
+    }
+    .acg-banner-fluid-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Mobile ke liye */
+@media (max-width: 768px) {
+    .acg-banner-render-img {
+        height: 220px; /* Mobile par banner ke hisab se balanced height */
+    }
+    .acg-banner-fluid-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .acg-perfect-banner-section {
+        padding: 10px 0;
+    }
+}
