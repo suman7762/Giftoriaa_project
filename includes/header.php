@@ -259,7 +259,7 @@
         }
 
         .submenu li a {
-            padding: 14px 20px;
+            padding: 6px 20px;
             font-size: 15px;
         }
 
@@ -597,89 +597,80 @@
         <!-- NAVBAR -->
 
         <div class="bottom-navbar">
-
             <div class="bottom-navbar-inner">
-
                 <ul class="menu">
-
-                    <li>
-                        <a href="#">Personalized Gift</a>
+                    <li class="dropdown">
+                        <a href="#">Personalized Gift
+                            <i class="bi bi-chevron-down dropdown-icon"></i>
+                        </a>
+                         <ul class="submenu">
+                            <li><a href="#">Nameplates & Signages</a></li>
+                            <li><a href="#">Diary & Stationary</a></li>
+                            <li><a href="#">Keychains & wallets</a></li>
+                            <li><a href="#">Mobile & Tech Accessories</a></li>
+                            <li><a href="#">Kids & Education Gifts</a></li>
+                            <li><a href="#">Keepsake Boxes</a></li>
+                            <li><a href="#">LED Night Lamps</a></li> 
+                            <li><a href="#">Mug & Sppier</a></li>
+                            <li><a href="#">Clock & calender</a></li>
+                            <li><a href="#">Cushions</a></li>
+                        </ul>
                     </li>
-
-                    <li>
-                        <a href="#">LED Lamp</a>
-                    </li>
-
                     <li>
                         <a href="#">Desk Organizers</a>
                     </li>
-
                     <li class="dropdown">
                         <a href="#">
                             Corporate Gift
                             <i class="bi bi-chevron-down dropdown-icon"></i>
                         </a>
-
                         <ul class="submenu">
-
                             <li><a href="#">Employee Gifts</a></li>
                             <li><a href="#">Client Gifts</a></li>
-                            <li><a href="#">Festival Gifts</a></li>
-                            <li><a href="#">Bulk Orders</a></li>
-
                         </ul>
-
                     </li>
-
                     <li class="dropdown">
-
                         <a href="#">
                             Occasion
                             <i class="bi bi-chevron-down dropdown-icon"></i>
                         </a>
-
                         <ul class="submenu">
-
-                            <li><a href="#">Diwali</a></li>
-                            <li><a href="#">Holi Gifts</a></li>
                             <li><a href="#">New Year</a></li>
-
+                            <li><a href="#">Valentinet's Day</a></li>
+                            <li><a href="#">Holi Gifts</a></li>
+                            <li><a href="#">Women's Day</a></li>
+                            <li><a href="#">Mother's Day</a></li>
+                            <li><a href="#">Father's Day</a></li>
+                            <li><a href="#">Teacher's Day</a></li>
+                            <li><a href="#">Raksha Bandhan</a></li>
+                            <li><a href="#">National Festival</a></li>
+                            <li><a href="#">Diwali</a></li>
+                            <li><a href="#">Christmas Day</a></li>
                         </ul>
-
                     </li>
-
+                    <li>
+                        <a href="#">Photo Frames</a>
+                    </li>
                     <li>
                         <a href="#">Momentos</a>
                     </li>
-
                     <li>
-                        <a href="#">Hampers</a>
+                        <a href="#">Resin</a>
                     </li>
-
                     <li class="dropdown">
-
                         <a href="#">
                             More
                             <i class="bi bi-chevron-down dropdown-icon"></i>
                         </a>
-
                         <ul class="submenu">
-
-                            <li><a href="#">Birthday Gifts</a></li>
-                            <li><a href="#">Anniversary</a></li>
-                            <li><a href="#">Wedding Gifts</a></li>
-                            <li><a href="#">Custom Gifts</a></li>
-
+                            <li><a href="#">Fridge Magnets</a></li>
+                            <li><a href="#">Custom Mouse Pads</a></li>
+                            <li><a href="#">Key Holders</a></li>
                         </ul>
-
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
-
     </header>
 
     <!-- JS -->

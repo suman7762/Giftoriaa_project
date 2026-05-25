@@ -74,10 +74,22 @@
     <!-- 🔥 2. CIRCULAR CATEGORIES -->
     <section class="custom-category-section">
         <div class="container">
-            <h2 class="main-title">Buy Custom Personalized & Corporate Gifts</h2>
+            <h2 class="main-title">Gifts by Occasion & Events</h2>
             <p class="main-subtitle">Alight Custom Gift - A Bit of You in Every Gift</p>
 
             <div class="category-grid">
+                 <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?6" alt="Personalized"></div>
+                        <p>Personalized Gifts</p>
+                    </div>
+                </a>
+                 <a href="">
+                    <div class="category-card">
+                        <div class="image-holder"><img src="https://picsum.photos/200?5" alt="Corporate"></div>
+                        <p>Corporate Gifts</p>
+                    </div>
+                </a>
                 <a href="new-arrival-gifts.php">
                     <div class="category-card">
                         <div class="image-holder"><img src="https://picsum.photos/200?1" alt="Birthday"></div>
@@ -99,19 +111,7 @@
                 <a href="">
                     <div class="category-card">
                         <div class="image-holder"><img src="https://picsum.photos/200?4" alt="Mini You"></div>
-                        <p>Mini You Series</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="category-card">
-                        <div class="image-holder"><img src="https://picsum.photos/200?5" alt="Corporate"></div>
-                        <p>Corporate Gifts</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="category-card">
-                        <div class="image-holder"><img src="https://picsum.photos/200?6" alt="Personalized"></div>
-                        <p>Personalized Gifts</p>
+                        <p>Fun & funky</p>
                     </div>
                 </a>
                 <a href="">
@@ -123,9 +123,10 @@
                 <a href="">
                     <div class="category-card">
                         <div class="image-holder"><img src="https://picsum.photos/200?8" alt="Handmade"></div>
-                        <p>Handmade Gifts</p>
+                        <p>Love one</p>
                     </div>
                 </a>
+                
             </div>
         </div>
     </section>
@@ -134,24 +135,24 @@
     <section class="bs-custom-section">
         <div class="bs-container">
             <div class="bs-title-wrapper">
-                <span class="bs-main-title">Bestsellers</span>
+                <span class="bs-main-title">Custom Home Decor & Accessories</span>
             </div>
 
             <div class="bs-category-grid">
                 <!-- Item 1 -->
                 <div class="bs-card">
                     <div class="bs-img-box">
-                        <img src="assets/images/ad6d51fb-ac18-4165-b572-97e2b6697a54.jpg" alt="Corporate Favorites">
+                        <img src="assets/images/ad6d51fb-ac18-4165-b572-97e2b6697a54.jpg" alt="Photos frames">
                     </div>
-                    <p class="bs-label">Corporate Favorites</p>
+                    <p class="bs-label">Photos frames</p>
                 </div>
 
                 <!-- Item 2 -->
                 <div class="bs-card">
                     <div class="bs-img-box">
-                        <img src="assets/images/cc86ee29-60ed-4b61-9fa8-1e50c566462c.jpg" alt="Trophies">
+                        <img src="assets/images/cc86ee29-60ed-4b61-9fa8-1e50c566462c.jpg" alt="LED lamps">
                     </div>
-                    <p class="bs-label">Trophies</p>
+                    <p class="bs-label">LED lamps</p>
                 </div>
 
                 <!-- Item 3 -->
@@ -173,17 +174,43 @@
                 <!-- Item 5 -->
                 <div class="bs-card">
                     <div class="bs-img-box">
-                        <img src="assets/images/188537a2-a9d3-40a6-846b-18df3760e7af.jpg" alt="Gift Hamper">
+                        <img src="assets/images/188537a2-a9d3-40a6-846b-18df3760e7af.jpg" alt="Home decores">
                     </div>
-                    <p class="bs-label">Gift Hamper</p>
+                    <p class="bs-label">Home decores</p>
                 </div>
 
                 <!-- Item 6 -->
                 <div class="bs-card">
                     <div class="bs-img-box">
-                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="LED Lamp">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="Resin">
                     </div>
-                    <p class="bs-label">LED Lamp</p>
+                    <p class="bs-label">Resin</p>
+                </div>
+                 <!-- Item 7 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="Fridge magnet">
+                    </div>
+                    <p class="bs-label">Fridge magnet</p>
+                </div>
+                <!-- Item 8 -->
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="Key chain">
+                    </div>
+                    <p class="bs-label">Key chain</p>
+                </div>
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="Customise T-Shirt">
+                    </div>
+                    <p class="bs-label">Customise T-Shirt</p>
+                </div>
+                <div class="bs-card">
+                    <div class="bs-img-box">
+                        <img src="assets/images/86f53c26-d54f-4d94-a36f-17f53a9bb47f.jpg" alt="Kids Game & Education">
+                    </div>
+                    <p class="bs-label">Game & Education</p>
                 </div>
             </div>
         </div>
@@ -511,7 +538,321 @@
             </div>
         </div>
     </section>
+<!-- --- 5 All Products New Section --- -->
+<section class="tr-ap-products-section">
+    <div class="tr-ap-container">
+        <div class="tr-ap-top-header">
+            <div class="tr-ap-title-box">
+                <h2 class="tr-ap-section-title">All Products</h2>
+                <p class="tr-ap-section-subtitle">Explore our complete collection of loved gifts</p>
+            </div>
+        </div>
 
+        <div class="tr-ap-grid-container" id="tr-all-products-grid">
+            
+            <!-- Card 1 -->
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/image5.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tr-ap-product-card">
+                <div class="tr-ap-product-image">
+                    <img src="assets/images/4c76badddcd954267bd575615d7fcaed.jpg" alt="Product">
+                    <button class="tr-ap-wishlist-btn"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="tr-ap-product-info">
+                    <h3 class="tr-ap-product-name">Personalized Photo Lamp Lorem ipsum dolor sit amet.</h3>
+                    <div class="tr-ap-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(126)</span>
+                    </div>
+                    <div class="tr-ap-price-row">
+                        <span class="tr-ap-old-price">₹1,499</span>
+                        <span class="tr-ap-new-price">₹999</span>
+                    </div>
+                </div>
+            </div>
+            <!-- यहाँ पर आप अपने बाकी के सारे कार्ड्स (12, 24, 50 जितने भी हैं) पेस्ट कर दें -->
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="tr-ap-load-more-box">
+            <button id="tr-ap-load-more-btn" class="tr-ap-load-btn">Load More Products ↓</button>
+        </div>
+    </div>
+</section>
     <section class="wcu-section">
         <div class="wcu-container">
             <h2 class="wcu-main-title">Why Choose Us?</h2>
@@ -1006,6 +1347,41 @@
         beforeImg.style.width = position + "%";
         handle.style.left = position + "%";
     });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const cardsPerPage = 12; // एक बार में 12 कार्ड्स (6-6 की दो लाइनें)
+    const grid = document.getElementById("tr-all-products-grid");
+    const cards = Array.from(grid.getElementsByClassName("tr-ap-product-card"));
+    const loadMoreBtn = document.getElementById("tr-ap-load-more-btn");
+    
+    let currentVisibleCount = 0;
+
+    function showNextCards() {
+        // अगले 12 कार्ड्स का सेट निकालना
+        const nextSet = cards.slice(currentVisibleCount, currentVisibleCount + cardsPerPage);
+        
+        // उन्हें क्लास देकर डिस्प्ले फ्लेक्स (शो) करना
+        nextSet.forEach(card => {
+            card.classList.add("tr-ap-show");
+        });
+
+        currentVisibleCount += nextSet.length;
+
+        // अगर सारे कार्ड्स लोड हो चुके हैं या टोटल कार्ड्स 12 से कम थे, तो बटन छुपा दें
+        if (currentVisibleCount >= cards.length) {
+            loadMoreBtn.style.display = "none";
+        }
+    }
+
+    // पेज लोड होते ही पहले 12 कार्ड्स दिखाने के लिए रन करें
+    showNextCards();
+
+    // बटन क्लिक करने पर अगले 12 कार्ड्स लोड करने का इवेंट
+    loadMoreBtn.addEventListener("click", function () {
+        showNextCards();
+    });
+});
 </script>
 
 <!-- <script>

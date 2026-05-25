@@ -273,9 +273,11 @@
 }
 
 .bs-container {
-    max-width: 1200px;
+    /* 🔥 UPDATED: Max width badha di gayi hai taaki 6 items bina chhote hue aaram se fit ho sakein */
+    max-width: 1400px; 
     margin: -35px auto;
-    padding: 0 15px;
+    /* 🔥 UPDATED: Left aur right ki padding kam kar di hai taaki maximum screen area use ho */
+    padding: 0 5px; 
     text-align: center;
 }
 
@@ -302,11 +304,11 @@
     max-width: 150px;
 }
 
-/* 🔥 UPDATED: 1 Row mein 5 cards ka logic */
+/* 🔥 UPDATED: Desktop par 1 Row mein 6 cards ka logic */
 .bs-category-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 Columns */
-    gap: 20px; /* Gap badhaya gaya hai taaki cards narrow lagen */
+    grid-template-columns: repeat(6, 1fr); /* Ab desktop par ek line mein 6 items dikhenge */
+    gap: 15px; /* Gap ko thoda balance kiya hai taaki card size maintain rahe */
 }
 
 .bs-card {
@@ -314,7 +316,7 @@
     flex-direction: column;
     align-items: center;
     transition: all 0.3s ease;
-    padding: 10px; /* Space inside card */
+    padding: 10px; 
 }
 
 .bs-card:hover {
@@ -322,12 +324,11 @@
 }
 
 .bs-img-box {
-    width: 100%; /* Pehle 80% tha, ab container ke hisab se full */
-    max-width: 190px; /* Width ko control karne ke liye */
-    /* 🔥 UPDATED: Height badhane ke liye aspect-ratio change kiya (Width : Height) */
+    width: 100%; 
+    max-width: 190px; 
     aspect-ratio: 4 / 5; 
     border: 1px solid #b1783f;
-    border-radius: 40px; /* Thoda kam rounded taaki lambai dikhe */
+    border-radius: 40px; 
     overflow: hidden;
     background: #ffffff;
     display: flex;
@@ -339,7 +340,6 @@
 .bs-img-box img {
     width: 100%;
     height: 100%;
-    /* Image ko bina stretch kiye pura dikhane ke liye cover behtar hai */
     object-fit: cover; 
 }
 
@@ -347,10 +347,16 @@
     margin-top: 18px;
     font-weight: 600;
     color: #2d3748;
-    font-size: 0.95rem; /* Font thoda sleek kiya */
+    font-size: 0.95rem; 
 }
 
 /* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+    .bs-category-grid {
+        grid-template-columns: repeat(5, 1fr); /* Choti desktop/laptop screen par 5 */
+    }
+}
+
 @media (max-width: 1024px) {
     .bs-category-grid {
         grid-template-columns: repeat(4, 1fr); /* Tablet par 4 */
@@ -363,21 +369,31 @@
     }
 }
 
+/* --- Responsive Adjustments for Mobile Screen --- */
 @media (max-width: 480px) {
+    .bs-custom-section {
+         margin-top: -20px;
+    }
+
     .bs-category-grid {
-        grid-template-columns: repeat(2, 1fr); /* Mobile par 2 */
-        gap: 15px;
+        grid-template-columns: repeat(3, 1fr); /* Mobile par 3 items as it is rkha hai */
+        gap: 10px; 
+    }
+
+    .bs-card {
+        padding: 4px; 
     }
 
     .bs-img-box {
-        border-radius: 25px;
+        border-radius: 20px; 
     }
     
     .bs-label {
-        font-size: 0.85rem;
+        margin-top: 10px;
+        font-size: 0.75rem; 
+        line-height: 1.2;
     }
 }
-
  /* --- 4  Trending Gifts New UI --- */
  .tr-products-section {
      padding: 38px 0;
@@ -969,4 +985,167 @@
     .gt-about-image, .gt-about-content { width: 100%; flex: none; }
     .gt-about-image { max-width: 500px; margin: 0 auto; }
     .gt-title { font-size: 2rem; }
+}
+
+
+/* --- 5 All Products New Section UI --- */
+.tr-ap-products-section {
+     padding: 38px 0;
+     background: #fff;
+     font-family: 'Poppins', sans-serif;
+}
+
+.tr-ap-container {
+     max-width: 1400px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+
+.tr-ap-top-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     margin-bottom: 25px;
+}
+
+.tr-ap-section-title {
+     font-size: 1.6rem;
+     font-weight: 700;
+     color: #222;
+}
+
+/* 6 कॉलम का ग्रिड लेआउट */
+.tr-ap-grid-container {
+     display: grid;
+     grid-template-columns: repeat(6, 1fr); /* 1 लाइन में 6 कार्ड */
+     gap: 25px 15px; /* ऊपर-नीचे 25px, लेफ्ट-राइट 15px का गैप */
+     padding: 10px 0;
+     width: 100%;
+}
+
+/* शुरुआत में लोड होने से पहले ऑल प्रोडक्ट्स के कार्ड्स छुपे रहेंगे */
+.tr-ap-products-section .tr-ap-product-card {
+     display: none;
+}
+
+/* जावास्क्रिप्ट के थ्रू दिखने के लिए */
+.tr-ap-products-section .tr-ap-product-card.tr-ap-show {
+     display: flex;
+}
+
+/* कार्ड स्टाइल (फ्लेक्सिबल विड्थ के साथ ताकि ग्रिड में सही बैठे) */
+.tr-ap-product-card {
+     background: #fff;
+     flex-direction: column;
+     transition: 0.3s;
+}
+
+.tr-ap-product-image {
+     width: 100%;
+     aspect-ratio: 1 / 1;
+     border-radius: 10px;
+     overflow: hidden;
+     position: relative;
+     background: #f5f5f5;
+}
+
+.tr-ap-product-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.tr-ap-product-name {
+     font-size: 0.85rem;
+     font-weight: 600;
+     margin: 10px 0 5px;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     min-height: 2.4rem;
+}
+
+.tr-ap-price-row {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     margin-top: auto;
+}
+
+.tr-ap-old-price {
+     font-size: 0.75rem;
+     color: #999;
+     text-decoration: line-through;
+}
+
+.tr-ap-new-price {
+     font-size: 1rem;
+     font-weight: 700;
+     color: #ef4444;
+}
+
+.tr-ap-wishlist-btn {
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     background: #fff;
+     border: none;
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     font-size: 12px;
+     cursor: pointer;
+}
+
+/* Load More Button Styling */
+.tr-ap-load-more-box {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.tr-ap-load-btn {
+    background: #faf7f2;
+    color: #99612d;
+    border: none;
+    padding: 12px 35px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2);
+}
+
+.tr-ap-load-btn:hover {
+    background: #99612d;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+     .tr-ap-grid-container {
+          grid-template-columns: repeat(4, 1fr); /* 1 लाइन में 4 कार्ड */
+     }
+}
+
+@media (max-width: 800px) {
+     .tr-ap-grid-container {
+          grid-template-columns: repeat(3, 1fr); /* 1 लाइन में 3 कार्ड */
+     }
+}
+
+@media (max-width: 500px) {
+     .tr-ap-grid-container {
+          grid-template-columns: repeat(2, 1fr); /* मोबाइल पर 2 कार्ड */
+          gap: 15px 10px;
+     }
+     .tr-ap-load-btn {
+         width: 100%;
+     }
 }
