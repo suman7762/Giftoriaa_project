@@ -1,0 +1,209 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* Premium blurred bokeh background vibe */
+            background: radial-gradient(circle at 20% 30%, #fefcf9 0%, #f5ece2 50%, #e1d3c1 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* --- FLOATING TRANSPARENT GIFT BOXES (CSS BACKGROUND ART) --- */
+        .floating-box {
+            position: absolute;
+            color: rgba(177, 120, 63, 0.08); /* Transparent gold/bronze tint */
+            font-size: 90px; /* Bada size image ki tarah */
+            filter: drop-shadow(0 10px 15px rgba(177, 120, 63, 0.05));
+            animation: floatAnimation 8s ease-in-out infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Alag-alag positions boxes ke liye */
+        .box-1 { top: 10%; left: 15%; font-size: 110px; animation-delay: 0s; transform: rotate(15deg); }
+        .box-2 { top: 60%; left: 8%; font-size: 130px; animation-delay: 2s; transform: rotate(-20deg); }
+        .box-3 { top: 15%; right: 12%; font-size: 120px; animation-delay: 4s; transform: rotate(-10deg); }
+        .box-4 { top: 65%; right: 10%; font-size: 140px; animation-delay: 1s; transform: rotate(25deg); }
+        .box-5 { top: 40%; left: 25%; font-size: 70px; animation-delay: 3s; opacity: 0.5; }
+        .box-6 { top: 45%; right: 28%; font-size: 75px; animation-delay: 5s; opacity: 0.5; }
+
+        @keyframes floatAnimation {
+            0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+            50% { transform: translateY(-15px) rotate(calc(var(--rot, 0deg) + 5deg)); }
+        }
+
+        /* --- MAIN CARD: GLASSMORPHISM EFFECT --- */
+        .auth-container {
+            background: rgba(255, 255, 255, 0.45); /* Frosted semi-transparent background */
+            backdrop-filter: blur(15px); /* Image jaisa blur effect */
+            -webkit-backdrop-filter: blur(15px);
+            width: 430px;
+            padding: 40px 35px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(140, 89, 43, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            z-index: 10; /* Form boxes ke upar rahega */
+            position: relative;
+        }
+
+        /* Glowing heart on top of the card like image */
+        .top-heart {
+            text-align: center;
+            font-size: 32px;
+            color: rgba(177, 120, 63, 0.3);
+            margin-bottom: -10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.6; }
+        }
+
+        .brand-logo {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #8c592b;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Premium Tabs Switches */
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 30px;
+            background: rgba(177, 120, 63, 0.06);
+            padding: 5px;
+            border-radius: 12px;
+            border: 1px solid rgba(177, 120, 63, 0.1);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            background: none;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+            background: linear-gradient(135deg, #b1783f 0%, #8c592b 100%);
+            box-shadow: 0 4px 10px rgba(140, 89, 43, 0.2);
+        }
+
+        /* Form Controls */
+        .auth-form {
+            display: none;
+        }
+
+        .auth-form.active {
+            display: block;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .input-group {
+            margin-bottom: 22px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 8px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #b1783f;
+            font-size: 16px;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            padding: 14px 15px 14px 45px;
+            border: 1px solid rgba(177, 120, 63, 0.25);
+            border-radius: 12px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            outline: none;
+            color: #333;
+        }
+
+        .input-wrapper input:focus {
+            border-color: #8c592b;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(177, 120, 63, 0.2);
+        }
+
+        .input-wrapper input::placeholder {
+            color: #aaa;
+        }
+
+        .forgot-pass {
+            text-align: right;
+            margin-top: -12px;
+            margin-bottom: 25px;
+        }
+
+        .forgot-pass a {
+            color: #8c592b;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .forgot-pass a:hover {
+            text-decoration: underline;
+        }
+
+        /* Gold Gradient Button */
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #b1783f 0%, #8c592b 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(140, 89, 43, 0.25);
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(140, 89, 43, 0.35);
+        }

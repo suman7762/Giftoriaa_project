@@ -558,22 +558,31 @@
             <!-- MOBILE / DESKTOP ICONS -->
 
             <div class="header-icons">
+                <a href="tel:+919876543210" class="header-link">
+                    <div class="header-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>Call</span>
+                    </div>
+                </a>
 
-                <div class="header-item">
-                    <i class="bi bi-telephone"></i>
-                    <span>Call</span>
-                </div>
-                <a href="wishlist.php">
+                <a href="wishlist.php" class="header-link">
                     <div class="header-item">
                         <i class="bi bi-heart"></i>
                         <span>Wishlist</span>
                     </div>
                 </a>
-                
-                <a href="cart.php">
+
+                <a href="cart.php" class="header-link">
                     <div class="header-item">
                         <i class="bi bi-cart3"></i>
                         <span>Cart</span>
+                    </div>
+                </a>
+
+                <a href="login.php" class="header-link">
+                    <div class="header-item">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Account</span>
                     </div>
                 </a>
             </div>
@@ -603,14 +612,14 @@
                         <a href="#">Personalized Gift
                             <i class="bi bi-chevron-down dropdown-icon"></i>
                         </a>
-                         <ul class="submenu">
+                        <ul class="submenu">
                             <li><a href="#">Nameplates & Signages</a></li>
                             <li><a href="#">Diary & Stationary</a></li>
                             <li><a href="#">Keychains & wallets</a></li>
                             <li><a href="#">Mobile & Tech Accessories</a></li>
                             <li><a href="#">Kids & Education Gifts</a></li>
                             <li><a href="#">Keepsake Boxes</a></li>
-                            <li><a href="#">LED Night Lamps</a></li> 
+                            <li><a href="#">LED Night Lamps</a></li>
                             <li><a href="#">Mug & Sppier</a></li>
                             <li><a href="#">Clock & calender</a></li>
                             <li><a href="#">Cushions</a></li>
